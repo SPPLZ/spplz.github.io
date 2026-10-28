@@ -1,16 +1,11 @@
 # SPPLZ web projects
 
-- Home: https://spplz.github.io/
-- DC: https://spplz.github.io/DC/
+- Brand marketing website: https://spplz.github.io/DC/
+- Previous ordering app, **ver.WW01**: https://spplz.github.io/DC/ver.WW01.html
+- WW01 source: https://spplz.github.io/DC/ver.WW01-source.zip
 
-DC is an educational browser-only cafe ordering demo. Orders, coupons, wallet balance and stamps are saved in localStorage per browser. Payment choices simulate payment; no real charges, server approval, or SSE service is provided on GitHub Pages. Status transitions are simulated locally (8 seconds preparing, 20 seconds ready). No real store receives orders. Test redemption codes: WELCOME1000 and GIFT10000, once each per browser.
+DC now showcases the EODIYA COFFEE concept brand using user-provided logos. It includes a seasonal hero, product categories/details, brand story, journal dialogs and a campus concept store. Read DC/README.md for maintenance instructions. HTML/CSS/JS are built without a framework build step.
 
-## Update DC
+The previous full-width cafe order app was preserved unchanged as ver.WW01.html (SHA-256 CC8E367DCB27581069BE4663BB01A2EEBDB110A7C171A83CC0CDE68007BCDC2F). Orders and benefits are browser-only simulations. No actual orders or charges occur. Existing localStorage records remain compatible.
 
-Source is supplied as `dc-source.zip` (extract its DC folder). Use Node.js 22.12+ and npm:
-
-    cd source/DC
-    npm ci
-    npm run build
-
-Copy the contents of `dist` to the repository's `DC/` directory and commit. The initial published HTML embeds its compiled JS/CSS for a simple browser upload; later builds may use normal dist/assets files. Keep the Vite base `/DC/`. GitHub Pages serves `main` branch root. Built files are committed so deployment requires no Node build service. Do not store real personal data or secrets here. The separate full Next.js backend version remains in the original project backup.
+GitHub Pages serves the main branch root. Preserve DC/icon.svg, DC/icon-192.png, DC/icon-512.png, DC/manifest.webmanifest and DC/sw.js because the WW01 archive uses them. The old root dc-source.zip also contains the WW01 source; new marketing source is the HTML/CSS/JS and assets in DC/.
