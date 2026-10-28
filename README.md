@@ -1,11 +1,11 @@
-# SPPLZ web projects
+# EODIYA COFFEE
 
-- Brand marketing website: https://spplz.github.io/DC/
-- Previous ordering app, **ver.WW01**: https://spplz.github.io/DC/ver.WW01.html
-- WW01 source: https://spplz.github.io/DC/ver.WW01-source.zip
+- Marketing: https://spplz.github.io/EDY/
+- Menu and ordering: https://spplz.github.io/EDY/menu/
+- Frozen ver.WW01: https://spplz.github.io/DC/ver.WW01.html
+- Frozen WW01 source: https://spplz.github.io/DC/ver.WW01-source.zip
+- Current ordering source: https://spplz.github.io/EDY/menu/order-source.zip
 
-DC now showcases the EODIYA COFFEE concept brand using user-provided logos. It includes a seasonal hero, product categories/details, brand story, journal dialogs and a campus concept store. Read DC/README.md for maintenance instructions. HTML/CSS/JS are built without a framework build step.
+DC/index.html redirects to EDY. All DC archive files and their assets are preserved. EDY marketing is static HTML/CSS/JS; EDY/menu is a built React app with browser-only checkout, wallet, coupon and stamp simulation. No real payments or orders occur. On first use, EDY imports existing WW01 demo records into separate storage keys. Later EDY changes do not modify the frozen WW01 app records.
 
-The previous full-width cafe order app was preserved unchanged as ver.WW01.html (SHA-256 CC8E367DCB27581069BE4663BB01A2EEBDB110A7C171A83CC0CDE68007BCDC2F). Orders and benefits are browser-only simulations. No actual orders or charges occur. Existing localStorage records remain compatible.
-
-GitHub Pages serves the main branch root. Preserve DC/icon.svg, DC/icon-192.png, DC/icon-512.png, DC/manifest.webmanifest and DC/sw.js because the WW01 archive uses them. The old root dc-source.zip also contains the WW01 source; new marketing source is the HTML/CSS/JS and assets in DC/.
+For changes to the menu app, extract order-source.zip, run npm ci then npm run build. Vite base is /EDY/menu/. Copy dist files into EDY/menu. The initial HTML embeds the generated JS/CSS. Shared product photography and brand logos live in EDY/. Keep the frozen WW01 files unchanged.
