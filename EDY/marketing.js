@@ -1,5 +1,4 @@
 const grid=document.querySelector('#products');
-const mobileMenus=window.matchMedia('(max-width: 800px)');
 const photoClasses={m1:'latte',m2:'americano',m3:'blue',m4:'americano',m5:'latte',m10:'croissant'};
 const generatedPhotos={m6:0,m7:1,m11:2,m13:3,m14:4,m15:5,m16:6,m17:7,m12:8};
 const dessertPhotos={m8:0,m19:1,m20:2,m21:3,m22:4,m23:5,m24:6,m25:7,m26:8};
@@ -7,7 +6,7 @@ function artwork(p){return Object.hasOwn(dessertPhotos,p.id) ? `<div class="prod
 function render(filter='all'){
  const detailCategory=p=>p.category==='추천메뉴'&&['m1','m2'].includes(p.id)?'커피':p.category;
  const card=(p,category=p.category)=>`<button class="product" data-product="${p.id}" aria-label="${p.name} 자세히 보기">${artwork(p)}<p class="product-label">${category}</p><h3>${p.name}</h3><small>${p.en}</small><span class="plus" aria-hidden="true">+</span></button>`;
- if(filter!=='all'&&!mobileMenus.matches){grid.innerHTML=products.filter(p=>p.category===filter||detailCategory(p)===filter).map(p=>card(p,filter)).join('');return}
+ if(filter!=='all'){grid.innerHTML=products.filter(p=>p.category===filter||detailCategory(p)===filter).map(p=>card(p,filter)).join('');return}
  const categories=[...document.querySelectorAll('[data-filter]')].map(button=>button.dataset.filter).filter(category=>category!=='all');
  grid.innerHTML=categories.map(category=>{const items=products.filter(p=>p.category===category||detailCategory(p)===category);return items.length?`<h3 class="category-heading" data-category="${category}">${category}</h3>${items.map(p=>card(p,category)).join('')}`:''}).join('');
 }
@@ -16,12 +15,7 @@ render();document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListene
  selectedFilter=b.dataset.filter;
  document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});
  render(selectedFilter);
- if(mobileMenus.matches){
-  const target=selectedFilter==='all'?grid:[...grid.querySelectorAll('[data-category]')].find(heading=>heading.dataset.category===selectedFilter);
-  target?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
- }
 }));
-mobileMenus.addEventListener('change',()=>render(selectedFilter));
 const dialog=document.querySelector('#detail'),detail=document.querySelector('#detail-content');let priorFocus;
 function show(content){priorFocus=document.activeElement;detail.innerHTML=content;dialog.showModal();document.querySelector('.dialog-close').focus()}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-product]');if(!b)return;const p=products.find(x=>x.id===b.dataset.product);show(`${artwork(p)}<p class="eyebrow">${p.category}</p><h2>${p.name}</h2><p>${p.description}</p><p class="price">${p.price.toLocaleString('ko-KR')}원 <small>체험 메뉴 가격</small></p><a class="pill dark" href="/EDY/menu/">메뉴 주문 체험 <span>↗</span></a><p class="note">과제용 예시 정보입니다. 실제 상품 판매 및 영양·알레르기 안내가 아닙니다.</p>`)});
