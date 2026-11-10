@@ -15,7 +15,7 @@ const products = [
   },
   {
     "id": "m2",
-    "name": "시험기간 열공 아메리카노 (EX)",
+    "name": "시험기간 열공 아메리카노",
     "en": "Hard Study Extra Americano",
     "price": 2800,
     "category": "추천메뉴",
@@ -85,7 +85,7 @@ const products = [
   },
   {
     "id": "m7",
-    "name": "자몽 블랙 티 (Jong-Black Tea)",
+    "name": "자몽 블랙 티",
     "en": "Grapefruit Black Tea",
     "price": 3800,
     "category": "블렌딩티/에이드",
