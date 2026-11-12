@@ -43,3 +43,7 @@ footer{padding:48px 8% 32px;background:#f6f8f7}.footer-top,.footer-bottom{displa
 .hero-images,.product-art,.pairing-photo,.story-season{position:relative}.hero-images::after{left:auto;right:16px;bottom:12px}
 @media(max-width:800px){.hero-images::after{left:12px;right:auto}}
 .hero-images::after{left:12px;right:auto}.hero-foot{bottom:56px}@media(max-width:800px){.hero-foot{bottom:316px}}
+/* Keep the hero image layer pinned to the banner; labels remain readable without a box. */
+.hero-images{position:absolute;inset:0}.hero-images::after,.product-art:not(.product-placeholder)::after,.pairing-photo::after,.story-season::after{background:transparent;color:#fff;font-size:9px;padding:0;text-shadow:0 1px 3px #10212b,0 0 2px #10212b}
+.pill{gap:16px}.pill>span:empty,.text-link>span:empty,.order-link>span:empty,.intro-line a>span:empty,.story-arrow:empty{display:none}
+@media(max-width:800px){.hero-images{position:relative;inset:auto}}
