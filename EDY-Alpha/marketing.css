@@ -32,3 +32,7 @@ footer{padding:48px 8% 32px;background:#f6f8f7}.footer-top,.footer-bottom{displa
 :root{--paper:#f9fcfe;--line:#dceaf2;--blue:#d6eef9;--accent:#247aa2}
 .hero{background:#e5f3fb}.hero-photo{opacity:1}.intro-line,.brand-copy,.journal{background:#f4faff}.menu-section{background:#fff}.brand-art{background:#d9eef9}.store-section{background:#123c5b}
 @media(max-width:800px){.hero{background:#e5f3fb}}
+/* Two promotional scenes fade in place; the dot controls show the selected slide. */
+.hero-images{position:absolute;inset:0;overflow:hidden}.hero-images .hero-photo{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 550ms ease;object-fit:cover;object-position:center}.hero-images .hero-photo.is-active{opacity:1}.hero-content .pill{margin-top:32px}.slide-dots{display:flex;align-items:center;gap:8px;margin-right:8px}.slide-controls .slide-dot{width:10px;height:10px;min-width:10px;padding:0;border:0;border-radius:50%;background:#849eab}.slide-controls .slide-dot.active{background:#12384e;box-shadow:0 0 0 2px #e5f3fb,0 0 0 3px #12384e}
+@media(max-width:800px){.hero-images{position:relative;order:2;width:100%;height:300px;flex:none}.hero-images .hero-photo{height:100%;min-height:0;object-position:center}.hero-content .pill{margin-top:24px}}
+@media(prefers-reduced-motion:reduce){.hero-images .hero-photo{transition:none}}
