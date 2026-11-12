@@ -44,7 +44,7 @@ const products = [
   {
     "id": "m4",
     "name": "딥 에스프레소 아메리카노",
-    "en": "Deep Espresso Americano",
+    "en": "All Day Americano",
     "price": 2500,
     "category": "커피",
     "tone": "coffee",
