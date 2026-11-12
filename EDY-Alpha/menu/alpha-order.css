@@ -17,3 +17,7 @@ html,body,.preview-frame{background:#f7fbfd!important;color:#12324a!important;fo
 button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a9f!important;outline-offset:3px!important}
 @media(max-width:640px){.edy-header{height:auto!important;min-height:72px!important;padding:12px 20px!important}.edy-intro{min-height:144px!important;padding:28px 20px!important}.edy-intro h1{font-size:24px!important}.order-toolbar{padding:16px 20px!important}.menu-list,[data-view="desktop"] .menu-list{padding:16px 20px 88px!important;gap:16px!important}.order-option-panel{border-radius:12px 12px 0 0!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+/* Keep product names and prices comfortably inside each card. */
+.menu-list .order-product>div:first-child>div:last-child{padding:16px 52px 16px 16px!important}
+.menu-list .order-product>button{right:12px!important;bottom:12px!important}
+@media(max-width:640px){.menu-list .order-product>div:first-child>div:last-child{padding:12px 44px 16px 12px!important}.menu-list .order-product>button{right:8px!important;bottom:12px!important}}
