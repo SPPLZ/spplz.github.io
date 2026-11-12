@@ -28,3 +28,7 @@ footer{padding:48px 8% 32px;background:#f6f8f7}.footer-top,.footer-bottom{displa
 .brand-section{background:#f1f0e9}.brand-art{background:#e8eff0}.brand-copy{background:#f8f7f2}
 .journal{background:#f8f7f2}.store-section{background:#1d3441}
 @media(max-width:800px){.hero{display:flex;min-height:0;background:#ede2d2}.hero-photo{position:relative;inset:auto;order:2;height:300px;object-position:72% center}.hero-content{order:1;padding:56px 7% 88px;max-width:none}.hero h1{font-size:36px}.hero-foot{bottom:316px;left:7%}.filters button{padding:12px}.hero-description{font-size:14px}}
+/* Preserve the brand's light sky-blue palette in the Alpha version. */
+:root{--paper:#f9fcfe;--line:#dceaf2;--blue:#d6eef9;--accent:#247aa2}
+.hero{background:#e5f3fb}.hero-photo{opacity:1}.intro-line,.brand-copy,.journal{background:#f4faff}.menu-section{background:#fff}.brand-art{background:#d9eef9}.store-section{background:#123c5b}
+@media(max-width:800px){.hero{background:#e5f3fb}}
