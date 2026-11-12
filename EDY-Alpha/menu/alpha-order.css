@@ -1,0 +1,19 @@
+/* Unslop by Damir Sokolovsky, CC BY 4.0. Alpha order UI. */
+html,body,.preview-frame{background:#f7fbfd!important;color:#12324a!important;font-family:'Noto Sans KR',Arial,sans-serif!important}
+.edy-header{background:#fff!important;height:88px!important;border-bottom:1px solid #dfeaf0!important;box-shadow:none!important}
+.edy-header nav{font-size:14px!important;font-weight:500!important;gap:32px!important}.edy-header nav .selected{color:#267a9f!important}
+.edy-intro{min-height:176px!important;padding:40px 6%!important;background:#e6f4fb!important;isolation:auto!important}
+.edy-intro:before{display:none!important}.edy-intro p{letter-spacing:0!important;font-size:12px!important;font-weight:400!important;margin-bottom:12px!important}.edy-intro h1{font-weight:500!important;font-size:32px!important;letter-spacing:-1px!important}.edy-intro span{font-size:14px!important;color:#587080!important}
+.order-toolbar{box-shadow:none!important;background:#fff!important;border-color:#dfeaf0!important;padding:24px 6% 16px!important}
+.order-toolbar>div:first-child{background:transparent!important;border:0!important;padding:0!important}.order-toolbar input{border:1px solid #dce8ee!important;background:#f8fbfc!important;border-radius:8px!important;min-height:44px!important}
+.order-toolbar>div:last-child button{border-radius:8px!important;font-size:13px!important;font-weight:500!important;box-shadow:none!important}
+.order-toolbar>div:last-child button.bg-sky-500{background:#236f91!important;color:#fff!important}
+.menu-list,[data-view="desktop"] .menu-list{background:#f7fbfd!important;gap:24px!important;padding:24px 6% 96px!important}
+.menu-list>div,.menu-list>div.order-product,[data-view="desktop"] .menu-list>div{box-shadow:none!important;border:1px solid #e1ebef!important;border-radius:8px!important;transform:none!important}
+.order-product:hover{transform:none!important}.order-product>div:first-child>div:last-child>div:first-child>span:first-child{font-weight:500!important}
+.order-bottom-nav{box-shadow:none!important;background:#fff!important;border-color:#e1ebef!important}.order-bottom-nav>button span:last-child{font-weight:500!important}
+.order-cart-bar>button{border-radius:8px!important;background:#236f91!important}
+.order-option-panel{border-radius:12px!important;box-shadow:none!important}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a9f!important;outline-offset:3px!important}
+@media(max-width:640px){.edy-header{height:auto!important;min-height:72px!important;padding:12px 20px!important}.edy-intro{min-height:144px!important;padding:28px 20px!important}.edy-intro h1{font-size:24px!important}.order-toolbar{padding:16px 20px!important}.menu-list,[data-view="desktop"] .menu-list{padding:16px 20px 88px!important;gap:16px!important}.order-option-panel{border-radius:12px 12px 0 0!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
