@@ -16,7 +16,7 @@ const products = [
   {
     "id": "m2",
     "name": "시험기간 열공 아메리카노",
-    "en": "Hard Study Extra Americano",
+    "en": "All Day Americano",
     "price": 2800,
     "category": "추천메뉴",
     "tone": "coffee",
