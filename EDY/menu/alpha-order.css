@@ -130,3 +130,10 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a
   .desktop-option-selects option::checkmark{color:#168fbe;margin-right:8px}
  }
 }
+@supports (appearance:base-select){
+ @media (min-width:801px){
+  .desktop-option-selects select{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .desktop-option-selects select::picker-icon{margin-left:auto;flex:none}
+  .desktop-option-selects select::picker(select){position-area:block-end span-inline-end;position-try-fallbacks:none;inset:auto;top:anchor(bottom);left:anchor(left);right:anchor(right)}
+ }
+}
