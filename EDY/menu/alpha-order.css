@@ -65,4 +65,14 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a
 .desktop-options-total{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #d6e5ec;margin-top:18px;padding-top:18px;font-size:12px}
 .desktop-options-total strong{font-size:21px;color:#1694c4}
 }
+/* Desktop: image on the left, product name above the options, one price in the action. */
+@media (min-width:801px){
+.order-option-panel>div:nth-child(2){position:relative}
+.order-option-panel>div:nth-child(2)>div:first-child{justify-content:center!important}
+.order-option-panel>div:nth-child(2)>div:first-child>span{width:100%!important;max-width:500px}
+.order-option-panel>div:nth-child(2)>div:first-child>div{position:absolute;top:46px;left:calc(54% + 46px);right:48px;z-index:1}
+.order-option-panel>div:nth-child(2)>div:first-child>div>div:not(:first-child){display:none!important}
+.order-option-panel>div:nth-child(2)>.desktop-option-selects{padding-top:80px}
+.desktop-options-total{display:none!important}
+}
 
