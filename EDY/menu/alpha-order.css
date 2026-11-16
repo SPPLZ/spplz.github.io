@@ -116,3 +116,17 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a
  .desktop-option-selects select:focus{outline:0;border-color:#168fbe;box-shadow:0 0 0 3px rgba(22,143,190,.16)}
  .desktop-option-selects option{background:#fff;color:#0b2a4a}
 }
+
+@supports (appearance:base-select){
+ @media (min-width:801px){
+  .desktop-option-selects select,.desktop-option-selects select::picker(select){appearance:base-select}
+  .desktop-option-selects select{background:#fff;padding-right:14px}
+  .desktop-option-selects select::picker-icon{color:#168fbe;transition:rotate .15s}
+  .desktop-option-selects select:open::picker-icon{rotate:180deg}
+  .desktop-option-selects select::picker(select){border:1px solid #cbdfe9;border-radius:6px;margin-top:4px;background:#fff;box-shadow:0 8px 20px rgba(9,40,75,.12);padding:4px}
+  .desktop-option-selects option{min-height:42px;padding:10px 12px;border-radius:4px;color:#0b2a4a;background:#fff}
+  .desktop-option-selects option:hover,.desktop-option-selects option:focus{background:#e6f4fb;color:#087ca9}
+  .desktop-option-selects option:checked{font-weight:700;color:#087ca9;background:#e6f4fb}
+  .desktop-option-selects option::checkmark{color:#168fbe;margin-right:8px}
+ }
+}
