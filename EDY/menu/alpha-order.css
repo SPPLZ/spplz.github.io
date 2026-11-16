@@ -104,3 +104,6 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a
 
 .order-cart-bar>button{background:#168fbe!important}
 .preview-frame .order-cart-bar>button{background:#168fbe!important}
+
+/* A full-screen mobile dialog completely covers the page underneath. */
+@media(max-width:800px){[role=dialog]:has(>.order-option-panel){-webkit-backdrop-filter:none!important;backdrop-filter:none!important}}
