@@ -93,3 +93,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a
 }
 
 @media (max-width:800px){.order-option-panel{height:100dvh!important;max-height:100dvh!important;border-radius:0!important}}
+@media (max-width:800px){
+ .order-option-panel>div:nth-child(2)>.desktop-option-selects{display:none!important}
+ .order-option-panel>div:nth-child(2)>div:not(:first-child):not(.desktop-option-selects):not(:last-child){display:block!important}
+}
