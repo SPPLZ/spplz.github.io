@@ -101,3 +101,6 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a
  .order-option-panel button.bg-sky-500,.order-option-panel button.bg-rose-500,.order-option-panel>div:last-child button{background:#168fbe!important;border-color:#168fbe!important;color:#fff!important}
  .order-option-panel button.border-sky-500{border-color:#168fbe!important;--tw-ring-color:#168fbe!important}
 }
+
+.order-cart-bar>button{background:#168fbe!important}
+.preview-frame .order-cart-bar>button{background:#168fbe!important}
