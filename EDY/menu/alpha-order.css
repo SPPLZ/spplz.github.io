@@ -137,3 +137,4 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a
   .desktop-option-selects select::picker(select){position-area:block-end span-inline-end;position-try-fallbacks:none;inset:auto;top:anchor(bottom);left:anchor(left);right:anchor(right)}
  }
 }
+.order-toast{background:#168fbe!important;border-color:#168fbe!important;color:#fff!important}.order-toast svg{color:#fff!important}
