@@ -107,3 +107,12 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #267a
 
 /* A full-screen mobile dialog completely covers the page underneath. */
 @media(max-width:800px){[role=dialog]:has(>.order-option-panel){-webkit-backdrop-filter:none!important;backdrop-filter:none!important}}
+
+/* Desktop option fields retain native controls while matching the brand palette. */
+@media (min-width:801px){
+ .desktop-option-selects label{font-size:13px;letter-spacing:-.01em;margin-bottom:16px;color:#0b2a4a}
+ .desktop-option-selects select{appearance:none;-webkit-appearance:none;height:48px;margin-top:8px;padding:0 42px 0 14px;border:1px solid #cbdfe9;border-radius:6px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230b2a4a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;color:#0b2a4a;font:600 14px 'Noto Sans KR',Arial,sans-serif;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+ .desktop-option-selects select:hover{border-color:#168fbe}
+ .desktop-option-selects select:focus{outline:0;border-color:#168fbe;box-shadow:0 0 0 3px rgba(22,143,190,.16)}
+ .desktop-option-selects option{background:#fff;color:#0b2a4a}
+}
