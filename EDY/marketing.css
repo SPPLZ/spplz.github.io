@@ -52,3 +52,7 @@ footer{padding:48px 8% 32px;background:#f6f8f7}.footer-top,.footer-bottom{displa
 /* Scale photo disclaimer with each image, including product detail views. */
 .product-art:not(.product-placeholder){container-type:inline-size}
 .product-art:not(.product-placeholder)::after{font-size:clamp(5px,3cqw,9px);left:clamp(4px,3cqw,12px);bottom:clamp(4px,3cqw,12px);max-width:calc(100% - 8px);line-height:1.2;white-space:normal;word-break:keep-all}
+/* Keep the store section consistent with the light sky-blue brand palette. */
+.store-section{background:#d6eef9;color:#152e40}
+.store-section .eyebrow,.store-section>div>p:not(.eyebrow){color:#526e7e}
+.store-section .store-card .eyebrow,.store-section .store-card>p:not(.eyebrow){color:var(--muted)}
